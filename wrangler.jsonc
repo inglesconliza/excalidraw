@@ -1,0 +1,24 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "inglesconliza-whiteboard",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-08-17",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "excalidraw-app/build"
+  },
+  "routes": [
+    {
+      "pattern": "www.inglesconliza.com/whiteboard*",
+      "zone_name": "inglesconliza.com"
+    }
+  ],
+  "vars": {
+    "DEPLOY_BRANCH": "local",
+    "DEPLOY_COMMIT_HASH": "unknown",
+    "DEPLOYED_AT": "unknown"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

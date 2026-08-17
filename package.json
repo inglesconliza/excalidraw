@@ -41,7 +41,8 @@
     "vite-plugin-pwa": "0.21.1",
     "vite-plugin-svgr": "4.2.0",
     "vitest": "3.0.6",
-    "vitest-canvas-mock": "0.3.3"
+    "vitest-canvas-mock": "0.3.3",
+    "wrangler": "^4.110.0"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -62,6 +63,8 @@
     "build:version": "yarn --cwd ./excalidraw-app build:version",
     "build": "yarn --cwd ./excalidraw-app build",
     "build:preview": "yarn --cwd ./excalidraw-app build:preview",
+    "deploy": "node scripts/deploy-with-metadata.mjs",
+    "deploy:dry-run": "node scripts/deploy-with-metadata.mjs --dry-run",
     "start": "yarn --cwd ./excalidraw-app start",
     "start:production": "yarn --cwd ./excalidraw-app start:production",
     "start:example": "yarn build:packages && yarn --cwd ./examples/with-script-in-browser start",
