@@ -33,4 +33,5 @@ The deploy script injects `DEPLOY_BRANCH`, `DEPLOY_COMMIT_HASH`, and `DEPLOYED_A
 curl -fsS https://www.inglesconliza.com/whiteboard/health
 curl -fsSI https://www.inglesconliza.com/whiteboard/
 curl -fsSL https://www.inglesconliza.com/whiteboard/ | grep 'Excalidraw'
+curl -fsS https://www.inglesconliza.com/whiteboard/sw.js | grep 'registration.unregister'
 ```

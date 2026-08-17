@@ -158,6 +158,7 @@ export default defineConfig(({ mode }) => {
       ViteEjsPlugin(),
       VitePWA({
         registerType: "autoUpdate",
+        selfDestroying: true,
         devOptions: {
           /* set this flag to true to enable in Development mode */
           enabled: envVars.VITE_APP_ENABLE_PWA === "true",

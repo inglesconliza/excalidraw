@@ -7,3 +7,4 @@
 - The app is served by the Cloudflare Worker `inglesconliza-whiteboard` on route `www.inglesconliza.com/whiteboard*`.
 - The Vite app builds with `VITE_APP_BASE_PATH=/whiteboard/`; the Worker strips `/whiteboard` before serving static assets from `excalidraw-app/build`.
 - `/whiteboard/health` returns deploy metadata.
+- The generated PWA service worker is self-destroying for this fork so stale `/whiteboard` app-shell caches do not keep running older hashed bundles after deploys.
